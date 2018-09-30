@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/error', function(req, res) {
-  console.log(req);
+  console.log(req.body);
   res.status(200).json('ok');
 });
 
